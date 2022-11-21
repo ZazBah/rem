@@ -1,0 +1,216 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Roboto+Mono&family=Rubik+Glitch&family=Rubik+Microbe&display=swap");
+:root {
+  --color-white: ;
+  --color-orange: ;
+  --color-light: ;
+  --bg-color-dark: ;
+  --bg-color-light: ;
+  --font-number: "Lobster", cursive;
+  --font-fancy: "Rubik Glitch", cursive;
+  --font-pera: "Roboto Mono", monospace;
+  --font-bold: ;
+  --font-semibold: ;
+  --font-bolder: ;
+  --font-size-normal: ;
+  --font-size-medium: ;
+  --font-size-learge: ;
+}
+@media screen and (max-width: 768px) {
+  :root {
+    --font-size-normal: ;
+    --font-size-medium: ;
+    --font-size-learge: ;
+  }
+}
+@media screen and (max-width: 320px) {
+  :root {
+    --font-size-normal: ;
+    --font-size-medium: ;
+    --font-size-learge: ;
+  }
+}
+
+.opacity0 {
+  opacity: 0;
+}
+
+* {
+  cursor: default;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #fff;
+  color: #000;
+  position: static;
+}
+
+select,
+input,
+button:focus {
+  outline: none;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+.converter {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.converter .color {
+  position: absolute;
+  filter: blur(150px);
+}
+.converter .color:nth-child(1) {
+  top: -350px;
+  width: 600px;
+  height: 600px;
+  background: #ff359b;
+}
+.converter .color:nth-child(2) {
+  bottom: 0px;
+  left: 100px;
+  width: 500px;
+  height: 500px;
+  background: #fffd87;
+}
+.converter .color:nth-child(3) {
+  top: 50px;
+  right: 100px;
+  width: 500px;
+  height: 500px;
+  background: #00d2ff;
+}
+.converter .content_box {
+  width: 100%;
+  height: 400px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.converter .output_box {
+  width: 100%;
+}
+.converter .output_box h1 {
+  font-family: var(--font-fancy);
+  text-align: center;
+  font-size: 50px;
+}
+.converter .output_box .output_text_box {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.converter .output_box .output_text_box p {
+  font-family: var(--font-pera);
+}
+.converter .output_box h2 {
+  font-family: var(--font-fancy);
+  font-size: 30px;
+}
+.converter .output_box h2 .input_data,
+.converter .output_box h2 .converted_data {
+  font-family: var(--font-number);
+  font-size: 60px;
+}
+.converter .output_box h2 .input_perams,
+.converter .output_box h2 .converted_perams {
+  font-family: var(--font-pera);
+  font-size: 15px;
+}
+.converter .output_box h2 .input_perams {
+  margin-right: 20px;
+}
+.converter .output_box h2 .converted_data {
+  margin-left: 20px;
+}
+.converter .input_box input {
+  width: 70%;
+  height: 48px;
+  padding: 10px;
+  background-color: transparent;
+  color: black;
+  font-family: var(--font-pera);
+  border: 1px solid #000;
+  border-right: none;
+}
+.converter .input_box input::-webkit-outer-spin-button, .converter .input_box input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.converter .input_box select {
+  width: 28%;
+  height: 48px;
+  margin-left: -5px;
+  background-color: transparent;
+  font-family: var(--font-pera);
+  border: 1px solid #000;
+  border-left: none;
+}
+.converter .input_box .btn_calculate {
+  width: 100%;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: all linear 0.3s;
+}
+.converter .input_box .btn_calculate:hover {
+  background-color: #007bff;
+  border-color: #007bff;
+  color: #fff;
+}
+.converter .input_box p {
+  font-family: var(--font-pera);
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+.converter .input_box button {
+  width: 24%;
+  height: 40px;
+  font-family: var(--font-pera);
+  background-color: transparent;
+  border: 1px solid #000;
+  transition: all linear 0.3s;
+}
+.converter .input_box .active_btn {
+  background-color: #007bff;
+  border-color: #007bff;
+  color: #fff;
+}
+.converter .input_box .copyright {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.converter .input_box .copyright p {
+  font-family: var(--font-pera);
+}
+.converter .input_box .copyright h2 {
+  font-family: var(--font-fancy);
+}/*# sourceMappingURL=main.css.map */

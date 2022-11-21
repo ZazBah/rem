@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto+Mono&family=Rubik+Glitch&family=Rubik+Microbe&display=swap');
+
+
+:root{
+
+    --color-white: ;
+    --color-orange: ;
+    --color-light: ;
+
+    --bg-color-dark: ;
+    --bg-color-light: ;
+
+    --font-number:  'Lobster', cursive;
+    --font-fancy: 'Rubik Glitch', cursive;
+    --font-pera:  'Roboto Mono', monospace;
+
+    --font-bold: ;
+    --font-semibold: ;
+    --font-bolder: ;
+
+    --font-size-normal: ;
+    --font-size-medium: ;
+    --font-size-learge: ;
+
+    @media screen and (max-width: 768px){
+        --font-size-normal: ;
+        --font-size-medium: ;
+        --font-size-learge: ;
+    }
+    @media screen and (max-width: 320px){
+        --font-size-normal: ;
+        --font-size-medium: ;
+        --font-size-learge: ;
+    }
+}
+
+@mixin heading1 {
+    font-family: var(--font-heading);
+    font-size: var(--font-size-learge);
+    letter-spacing: 2px;
+    color: var(--color-white);
+}
+@mixin heading2 {
+    font-family: var(--font-heading);
+    font-size: var(--font-size-medium);
+    letter-spacing: 2px;
+    color: var(--color-white);
+}
+@mixin pera {
+    font-family: var(--font-pera);
+    font-size: var(--font-size-medium);
+    color: var(--color-light);
+}
+.opacity0{
+    opacity: 0;
+}
